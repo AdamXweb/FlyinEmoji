@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #fe0da6, #fea5de);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+p {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+  }
+  
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+.clicked{
+    background: repeating-radial-gradient(
+    circle,
+    purple,
+    purple 10px,
+    #fe59d0 10px, 
+    #59fe95 20px
+    );
+}
+h1{
+    text-align: center;
+}
+.static{
+    position: absolute;
+    width: 400px;
+    bottom: 20px;
+    z-index: 1;
+}
+.animate{
+    display: flex;
+    justify-content: center;
+}
+.emoji{
+    font-size: 30px;
+}
+.emoji-big{
+    transform: scale(4);
+    animation: emoji 12s infinite;
+    position: absolute;
+    animation-iteration-count: 10;
+    animation-timing-function: linear; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+
+}
+.emoji-big-1{
+    transform: scale(4);
+    translate: (10px, 20px);
+    animation: emoji-big-1 12s infinite;
+    animation-delay: 1s;
+    position: absolute;
+}
+.emoji-big-2{
+    transform: scale(4);
+    animation: emoji-big-2 12s infinite;
+    animation-delay: 2s;
+    position: absolute;
+
+}
+.emoji-big-3{
+    transform: scale(4);
+    animation: emoji-big-3 12s infinite;
+    animation-delay: 1.5s;
+    position: absolute;
+
+}
+.emoji-big-4{
+    transform: scale(4);
+    animation: emoji 12s infinite;
+    animation-delay: 3s;
+    position: absolute;
+}
+@keyframes rightThenLeft {
+    0%   {margin-right:-1px;}
+    50%  {margin-right:100%;}
+    100% {margin-right:0;}
+}
+
+
+@keyframes emoji {
+    0%   {margin-right:1800px;}
+    100% {margin-right:-1800px;}
+}
+@keyframes emoji-big-1 {
+    0%   {margin-right:1900px; transform-origin: bottom; font-size: 40px; }
+    100% {margin-right:-1800px; transform-origin: top}
+}
+
+@keyframes emoji-big-2 {
+    0%   {margin-right:1700px; transform-origin: top}
+    100% {margin-right:-1800px; transform-origin: top}
+}
+@keyframes emoji-big-3 {
+    0%   {margin-right:1700px; transform-origin: bottom}
+    100% {margin-right:-1700px; transform-origin: top}
+}
+/*Emoji Ideas shadow*/
+
+p a {
+    color: #FFF;
+  }
+p a:hover {
+    -webkit-animation: neon1 1.5s infinite alternate;
+    -moz-animation: neon1 1.5s infinite alternate;
+    animation: neon1 1.5s infinite alternate;
+  }
+
+p a:hover {
+    color: #ffffff;
+  }
+  /*glow*/
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
