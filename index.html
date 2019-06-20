@@ -6,28 +6,41 @@
     <div class="static">
         <p><a href="#">Emoji Ideas</a></p>
         <h1>
-            <a href="#alarm" id="alarm">🚨</a>
+            <a onClick="javascript:changeEmoji(1)" id="emoji">🚨</a>
             <a href="#hands" id="hands">🙌🏻</a>
             <a href="#seed" id="seed">🌱</a>
             <a href="#computer" id="computer">👨🏻‍💻</a>
             <a href="#whisky" id="whisky">🥃</a>
             <a href="#explosion" id="explosion">💥</a>
-            <a href="#meteor" id="meteor">☄️</a>
-
-            
+            <a href="#meteor" id="meteor">☄️</a>      
         </h1>
     </div>
     <div class="animate">
-        <div class="emoji emoji-big">🙌🏻</div>
         <div class="emoji emoji-big-1">🙌🏻</div>
         <div class="emoji emoji-big-2">🙌🏻</div>
         <div class="emoji emoji-big-3">🙌🏻</div>
+        <div class="emoji emoji-big-4">🙌🏻</div>
+        <div class="emoji emoji-big-5">🙌🏻</div>
+        <div class="emoji emoji-big-6">🙌🏻</div>
+        <div class="emoji emoji-big-7">🙌🏻</div>
+        <div class="emoji emoji-big-8">🙌🏻</div>
+        <div class="emoji emoji-m-1">🙌🏻</div>
+        <div class="emoji emoji-m-2">🙌🏻</div>
+        <div class="emoji emoji-m-3">🙌🏻</div>
+        <div class="emoji emoji-m-4">🙌🏻</div>
+        <div class="emoji emoji-m-5">🙌🏻</div>
+        <div class="emoji emoji-m-6">🙌🏻</div>
     </div>
 
     <script type="text/javascript">
-        $(function () {
-            $("#alarm").click(function () { $("#emoji").html("🚨"); });
+        $(function changeEmoji(emoji) {
+            var emoji = document.getElementById('emoji');
+            if (emoji === emoji || emoji === emoji) {
+                if (emoji.innerHTML === '🙌🏻') emoji.innerHTML = '🚨';
+                else {
+                    emoji.innerHTML = '🙌🏻';
+                }
+            }
         });
-
     </script>
 </body>
