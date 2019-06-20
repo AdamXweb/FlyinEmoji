@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="appwork.css">
 </head>
 <body>
     <div class="static">
         <p><a href="#">Emoji Ideas</a></p>
         <h1>
-            <a onClick="javascript:changeEmoji(1)" id="emoji">🚨</a>
+            <a href="#siren" id="siren">🚨</a>
             <a href="#hands" id="hands">🙌🏻</a>
             <a href="#seed" id="seed">🌱</a>
             <a href="#computer" id="computer">👨🏻‍💻</a>
@@ -15,32 +16,42 @@
             <a href="#meteor" id="meteor">☄️</a>      
         </h1>
     </div>
-    <div class="animate">
-        <div class="emoji emoji-big-1">🙌🏻</div>
-        <div class="emoji emoji-big-2">🙌🏻</div>
-        <div class="emoji emoji-big-3">🙌🏻</div>
-        <div class="emoji emoji-big-4">🙌🏻</div>
-        <div class="emoji emoji-big-5">🙌🏻</div>
-        <div class="emoji emoji-big-6">🙌🏻</div>
-        <div class="emoji emoji-big-7">🙌🏻</div>
-        <div class="emoji emoji-big-8">🙌🏻</div>
-        <div class="emoji emoji-m-1">🙌🏻</div>
-        <div class="emoji emoji-m-2">🙌🏻</div>
-        <div class="emoji emoji-m-3">🙌🏻</div>
-        <div class="emoji emoji-m-4">🙌🏻</div>
-        <div class="emoji emoji-m-5">🙌🏻</div>
-        <div class="emoji emoji-m-6">🙌🏻</div>
+    <div class="tab-content">
+        <div id="hands" class="tab-pane fade active show">
+            <div class="animate hands">
+                <div class="emoji emoji-big-1">🙌🏻</div>
+                <div class="emoji emoji-big-2">🙌🏻</div>
+                <div class="emoji emoji-big-3">🙌🏻</div>
+                <div class="emoji emoji-big-4">🙌🏻</div>
+                <div class="emoji emoji-big-5">🙌🏻</div>
+                <div class="emoji emoji-big-6">🙌🏻</div>
+                <div class="emoji emoji-big-7">🙌🏻</div>
+                <div class="emoji emoji-big-8">🙌🏻</div>
+                <div class="emoji emoji-m-1">🙌🏻</div>
+                <div class="emoji emoji-m-2">🙌🏻</div>
+                <div class="emoji emoji-m-3">🙌🏻</div>
+                <div class="emoji emoji-m-4">🙌🏻</div>
+                <div class="emoji emoji-m-5">🙌🏻</div>
+                <div class="emoji emoji-m-6">🙌🏻</div>
+            </div>
+        </div>
+        <div id="siren" class="tab-pane fade">
+            <div class="animate siren">
+                <div class="emoji emoji-big-1">🚨</div>
+                <div class="emoji emoji-big-2">🚨</div>
+                <div class="emoji emoji-big-3">🚨</div>
+                <div class="emoji emoji-big-4">🚨</div>
+                <div class="emoji emoji-big-5">🚨</div>
+                <div class="emoji emoji-big-6">🚨</div>
+                <div class="emoji emoji-big-7">🚨</div>
+                <div class="emoji emoji-big-8">🚨</div>
+                <div class="emoji emoji-m-1">🚨</div>
+                <div class="emoji emoji-m-2">🚨</div>
+                <div class="emoji emoji-m-3">🚨</div>
+                <div class="emoji emoji-m-4">🚨</div>
+                <div class="emoji emoji-m-5">🚨</div>
+                <div class="emoji emoji-m-6">🚨</div>
+            </div>
+        </div>
     </div>
-
-    <script type="text/javascript">
-        $(function changeEmoji(emoji) {
-            var emoji = document.getElementById('emoji');
-            if (emoji === emoji || emoji === emoji) {
-                if (emoji.innerHTML === '🙌🏻') emoji.innerHTML = '🚨';
-                else {
-                    emoji.innerHTML = '🙌🏻';
-                }
-            }
-        });
-    </script>
 </body>

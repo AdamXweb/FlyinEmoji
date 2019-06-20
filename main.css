@@ -26,15 +26,6 @@ a {
     transition: all 0.5s;
   }
 
-.clicked{
-    background: repeating-radial-gradient(
-    circle,
-    purple,
-    purple 10px,
-    #fe59d0 10px, 
-    #59fe95 20px
-    );
-}
 h1{
     text-align: center;
 }
@@ -64,6 +55,13 @@ p a:hover {
     display: flex;
     justify-content: center;
 }
+/* Tabs */
+.tab-content>.tab-pane {
+    display:none;
+   }
+   .tab-content>.active {
+    display:block
+   }
 
 /* Emoji declerations*/
 .emoji{
