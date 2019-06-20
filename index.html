@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="appwork.css">
+    <script src="/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".sirenb").click(function(){
+            $("#siren").show();
+            $("#hands").hide();
+            $("#body").addClass("sirenbg");
+            $("#body").removeClass("normal");
+            });
+            $(".handsb").click(function(){
+            $("#hands").show();
+            $("#siren").hide();
+            $("#body").removeClass("sirenbg");
+            $("#body").addClass("normal");
+            });
+        });
+    </script>
 </head>
-<body>
+<body id="body" class="normal">
     <div class="static">
-        <p><a href="#">Emoji Ideas</a></p>
+        <p><label for="modal__state">Emoji Ideas</label></p>
+        <input type="checkbox" name="modal__state" id="modal__state" class="modal__state">
+        <div id="modal-1" class="modal__overlay">
+            <label for="modal__state" class="modal__overlay-close"></label>
+            <div class="modal">
+              <h1>Emoji test</h1>
+              <br>
+              <br>
+              <div>A test to push my CSS limits.</div>
+              <br>
+              <br>
+              <a href="https://github.com/asdalavisa" target="_blank">👉 Check out my other projects</a>
+              <br>
+              <br>
+              <a href="https://github.com/asdalavisa/FlyinEmoji/issues"> Suggest a feature / report a bug!</a>
+            </div>
+        </div>
         <h1>
-            <a href="#siren" id="siren">🚨</a>
-            <a href="#hands" id="hands">🙌🏻</a>
-            <a href="#seed" id="seed">🌱</a>
-            <a href="#computer" id="computer">👨🏻‍💻</a>
-            <a href="#whisky" id="whisky">🥃</a>
-            <a href="#explosion" id="explosion">💥</a>
-            <a href="#meteor" id="meteor">☄️</a>      
+            <a href="#siren" class="sirenb">🚨</a>
+            <a href="#hands" class="handsb">🙌🏻</a>
+            <a href="#seed" class="seedb">🌱</a>
+            <a href="#computer" class="computerb">👨🏻‍💻</a>
+            <a href="#whisky" class="whiskyb">🥃</a>
+            <a href="#explosion" class="explosionb">💥</a>
+            <a href="#meteor" class="meteorb">☄️</a>      
         </h1>
     </div>
     <div class="tab-content">
@@ -35,7 +68,7 @@
                 <div class="emoji emoji-m-6">🙌🏻</div>
             </div>
         </div>
-        <div id="siren" class="tab-pane fade">
+        <div id="siren" class="tab-pane fade hide">
             <div class="animate siren">
                 <div class="emoji emoji-big-1">🚨</div>
                 <div class="emoji emoji-big-2">🚨</div>
