@@ -121,8 +121,8 @@ p label:hover {
 .modal {
     position: relative;
     margin-top: 50vh;
-    margin-right: 30vh;
-    margin-left: 30vh;
+    margin-right: 10vh;
+    margin-left: 10vh;
     padding: 140px 120px;
     background: #fff;
     text-align: center;
