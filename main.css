@@ -236,7 +236,7 @@ p label:hover {
 
 /* small */
 .s-1{
-    --height: -10vh;
+    --height: -40vh;
     animation-delay: 1.7s;
 }
 .s-2{
@@ -264,12 +264,12 @@ p label:hover {
     animation-delay: 4.7s;
 }
 .s-8{
-    --height: -4vh;
-    animation-delay: 5.7s;
+    --height: -25vh;
+    animation-delay: 6;
 }
 .s-9{
     --height: -2vh;
-    animation-delay: 6.7s;
+    animation-delay: 2.4s;
 }
 .s-10{
     --height: 9vh;
@@ -281,7 +281,7 @@ p label:hover {
 }
 .s-12{
     --height: -10vh;
-    animation-delay: 6.7s;
+    animation-delay: 1.5s;
 }
 
 /* Emoji animations */
