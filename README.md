@@ -1,6 +1,6 @@
 # FlyinEmoji
 CSS attempt to make Emoji fly
-View <a href="https://htmlpreview.github.io/?https://github.com/asdalavisa/FlyinEmoji/blob/master/index.html"> Here</a>
+View <a href="https://asdalavisa.github.io/FlyinEmoji/"> Here</a>
 
 ## Purpose
 To learn a bit of CSS and how elements can be animated changed with basic javascript.
