@@ -115,12 +115,12 @@ p label:hover {
     display: block;
 }
 @keyframes scoot-up {
-  0%   { margin-top: 80px;}
-  100%  { margin-top: 30vh; }
+  0%   { margin-top: 60px;}
+  100%  { margin-top: 10vh; }
 }
 .modal {
     position: relative;
-    margin-top: 50vh;
+    margin-top: 10vh;
     margin-right: 10vh;
     margin-left: 10vh;
     padding: 140px 120px;
@@ -129,7 +129,7 @@ p label:hover {
     box-shadow: 0px 0px 38px rgba(0,0,0,.2);
 }
 .modal__state:checked + .modal__overlay .modal {
-    margin-top: 30vh;
+    margin-top: 10vh;
     animation: scoot-up .2s;
     animation-timing-function: ease-out;
     transform-origin: 50% 0px;
@@ -154,157 +154,138 @@ p label:hover {
 .emoji{
     font-size: 30px;
     left: -5%;
+    position: absolute;
+    animation-timing-function: linear; 
+}
+.s{
+    --scale: 1;
+    animation: emoji 4s infinite;
+    animation-timing-function: linear; 
+}
+.m{
+    --scale: 2;
+    animation: emoji 6s infinite;
+    animation-timing-function: linear; 
+}
+.l{
+    --scale: 4;
+    animation: emoji 8s infinite;
+    animation-timing-function: linear; 
 }
 /* Big */
-.emoji-big-1{
-    animation: emoji-big-1 8s infinite;
+.l-1{
+    --height:-5vh;
     animation-delay: 1s;
-    position: absolute;
-    animation-timing-function: linear; 
 }
-.emoji-big-2{
-    animation: emoji-big-2 8s infinite;
+.l-2{
+    --height:0vh;  
     animation-delay: 2s;
-    position: absolute;
-    animation-timing-function: linear; 
-
 }
-.emoji-big-3{
-    animation: emoji-big-3 8s infinite;
+.l-3{
+    --height:-5vh;
     animation-delay: 3s;
-    position: absolute;
-    animation-timing-function: linear; 
-
 }
-.emoji-big-4{
-    animation: emoji-big-4 8s infinite;
+.l-4{
+    --height:-10vh;
     animation-delay: 4s;
-    position: absolute;
-    animation-timing-function: linear; 
 }
-.emoji-big-5{
-    animation: emoji-big-5 8s infinite;
+.l-5{
+    --height:-5vh;
     animation-delay: 5s;
-    position: absolute;
-    animation-timing-function: linear; 
 }
-.emoji-big-6{
-    animation: emoji-big-6 8s infinite;
+.l-6{
+    --height:0vh;
     animation-delay: 6s;
-    position: absolute;
-    animation-timing-function: linear; 
 }
-.emoji-big-7{
-    animation: emoji-big-7 8s infinite;
+.l-7{
+    --height:-5vh;
     animation-delay: 7s;
-    position: absolute;
-    animation-timing-function: linear; 
 }
-.emoji-big-8{
-    animation: emoji-big-8 8s infinite;
+.l-8{
+    --height:-10vh;
     animation-delay: 8s;
-    position: absolute;
-    animation-timing-function: linear; 
 }
 
 /* medium */
-.emoji-m-1{
-    animation: emoji-m-1 6s infinite;
+.m-1{
+    --height:-15vh;
     animation-delay: 1.7s;
-    position: absolute;
-    animation-timing-function: linear; 
 }
-.emoji-m-2{
-    animation: emoji-m-2 6s infinite;
+.m-2{
+    --height:-5vh;
     animation-delay: 2.7s;
-    position: absolute;
-    animation-timing-function: linear; 
 
 }
-.emoji-m-3{
-    animation: emoji-m-3 6s infinite;
+.m-3{
+    --height:-15vh;
     animation-delay: 3.7s;
-    position: absolute;
-    animation-timing-function: linear; 
 
 }
-.emoji-m-4{
-    animation: emoji-m-4 6s infinite;
+.m-4{
+    --height:-20vh;
     animation-delay: 4.7s;
-    position: absolute;
-    animation-timing-function: linear; 
 }
-.emoji-m-5{
-    animation: emoji-m-5 6s infinite;
+.m-5{
+    --height:-15vh;
     animation-delay: 5.7s;
-    position: absolute;
-    animation-timing-function: linear; 
 }
-.emoji-m-6{
-    animation: emoji-m-6 6s infinite;
+.m-6{
+    --height:-5vh;
     animation-delay: 6.7s;
-    position: absolute;
-    animation-timing-function: linear; 
 }
 
+/* small */
+.s-1{
+    --height: -10vh;
+    animation-delay: 1.7s;
+}
+.s-2{
+    --height: -5vh;
+    animation-delay: 2.7s;
+}
+.s-3{
+    --height: 0vh;
+    animation-delay: 3.1s;
+}
+.s-4{
+    --height: 5vh;
+    animation-delay: 4.2s;
+}
+.s-5{
+    --height: 10vh;
+    animation-delay: 5.5s;
+}
+.s-6{
+    --height: 8vh;
+    animation-delay: 6s;
+}
+.s-7{
+    --height: 12vh;
+    animation-delay: 4.7s;
+}
+.s-8{
+    --height: -4vh;
+    animation-delay: 5.7s;
+}
+.s-9{
+    --height: -2vh;
+    animation-delay: 6.7s;
+}
+.s-10{
+    --height: 9vh;
+    animation-delay: 4s;
+}
+.s-11{
+    --height: -20vh;
+    animation-delay: 5.7s;
+}
+.s-12{
+    --height: -10vh;
+    animation-delay: 6.7s;
+}
 
 /* Emoji animations */
-/*big */
-@keyframes emoji-big-1 {
-    0%   { transform: translateX(-10vw) scale(4) translateY(-5vh);}
-    100% { transform: translateX(120vw) scale(4) translateY(-5vh); }
-}
-@keyframes emoji-big-2 {
-    0%   { transform: translateX(-10vw) scale(4) translateY(0vh);}
-    100% { transform: translateX(120vw) scale(4) translateY(0vh); }
-}
-@keyframes emoji-big-3 {
-    0%   { transform: translateX(-10vw) scale(4) translateY(-5vh);}
-    100% { transform: translateX(120vw) scale(4) translateY(-5vh); }
-}
-@keyframes emoji-big-4 {
-    0%   { transform: translateX(-10vw) scale(4) translateY(-10vh);}
-    100% { transform: translateX(120vw) scale(4) translateY(-10vh); }
-}
-@keyframes emoji-big-5 {
-    0%   { transform: translateX(-10vw) scale(4) translateY(-5vh);}
-    100% { transform: translateX(120vw) scale(4) translateY(-5vh); }
-}
-@keyframes emoji-big-6 {
-    0%   { transform: translateX(-10vw) scale(4) translateY(0vh);}
-    100% { transform: translateX(120vw) scale(4) translateY(0vh); }
-}
-@keyframes emoji-big-7 {
-    0%   { transform: translateX(-10vw) scale(4) translateY(-5vh);}
-    100% { transform: translateX(120vw) scale(4) translateY(-5vh); }
-}
-@keyframes emoji-big-8 {
-    0%   { transform: translateX(-10vw) scale(4) translateY(-10vh);}
-    100% { transform: translateX(120vw) scale(4) translateY(-10vh); }
-}
-
-/* medium */
-@keyframes emoji-m-1 {
-    0%   { transform: translateX(-10vw) scale(2) translateY(-15vh);}
-    100% { transform: translateX(120vw) scale(2) translateY(-15vh); }
-}
-@keyframes emoji-m-2 {
-    0%   { transform: translateX(-10vw) scale(2) translateY(-5vh);}
-    100% { transform: translateX(120vw) scale(2) translateY(-5vh); }
-}
-@keyframes emoji-m-3 {
-    0%   { transform: translateX(-10vw) scale(2) translateY(-15vh);}
-    100% { transform: translateX(120vw) scale(2) translateY(-15vh); }
-}
-@keyframes emoji-m-4 {
-    0%   { transform: translateX(-10vw) scale(2) translateY(-20vh);}
-    100% { transform: translateX(120vw) scale(2) translateY(-20vh); }
-}
-@keyframes emoji-m-5 {
-    0%   { transform: translateX(-10vw) scale(2) translateY(-15vh);}
-    100% { transform: translateX(120vw) scale(2) translateY(-15vh); }
-}
-@keyframes emoji-m-6 {
-    0%   { transform: translateX(-10vw) scale(2) translateY(-5vh);}
-    100% { transform: translateX(120vw) scale(2) translateY(-5vh); }
+@keyframes emoji {
+    0%   { transform: translateX(-10vw) scale(var(--scale)) translateY(var(--height));}
+    100% { transform: translateX(120vw) scale(var(--scale)) translateY(var(--height));}
 }
