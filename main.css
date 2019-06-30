@@ -15,28 +15,19 @@ body{
 .normal{
     background-image: linear-gradient(to bottom right, #fe0da6, #fea5de);
 }
+.sky{
+    background-image: linear-gradient(to bottom right, #0d31fe, hsl(212, 98%, 82%));
+}
 .sirenbg{
     background: linear-gradient(184deg, #ff0000, #ffc9c9);
     background-size: 400% 400%;
-    
-    -webkit-animation: background 0s ease infinite;
-    -moz-animation: background 0s ease infinite;
-    animation: background 0s ease infinite;
-    
-    @-webkit-keyframes background {
-        0%{background-position:48% 0%}
-        50%{background-position:53% 100%}
-        100%{background-position:48% 0%}
-    }
-    @-moz-keyframes background {
-        0%{background-position:48% 0%}
-        50%{background-position:53% 100%}
-        100%{background-position:48% 0%}
-    }
+
+    animation: background 5s ease infinite;
+
     @keyframes background {
-        0%{background-position:48% 0%}
+        0%{background-position:28% 0%}
         50%{background-position:53% 100%}
-        100%{background-position:48% 0%}
+        100%{background-position:18% 0%}
     }
 }
 p {

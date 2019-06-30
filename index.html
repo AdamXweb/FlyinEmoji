@@ -7,15 +7,21 @@
         $(document).ready(function(){
             $(".sirenb").click(function(){
             $("#siren").show();
-            $("#hands").hide();
+            $("#hands, #seed").hide();
+            $("#body").removeClass();
             $("#body").addClass("sirenbg");
-            $("#body").removeClass("normal");
             });
             $(".handsb").click(function(){
             $("#hands").show();
-            $("#siren").hide();
-            $("#body").removeClass("sirenbg");
+            $("#siren, #seed").hide();
+            $("#body").removeClass();
             $("#body").addClass("normal");
+            });
+            $(".seedb").click(function(){
+            $("#seed").show();
+            $("#siren, #hands").hide();
+            $("#body").removeClass();
+            $("#body").addClass("sky");
             });
         });
     </script>
@@ -50,7 +56,7 @@
     </div>
     <div class="tab-content">
         <div id="hands" class="tab-pane fade active show">
-            <div class="animate hands">
+            <div class="animate">
                 <div class="emoji s s-1">🙌🏻</div>
                 <div class="emoji s s-2">🙌🏻</div>
                 <div class="emoji s s-3">🙌🏻</div>
@@ -80,7 +86,7 @@
             </div>
         </div>
         <div id="siren" class="tab-pane fade hide">
-            <div class="animate siren">
+            <div class="animate">
                 <div class="emoji l l-1">🚨</div>
                 <div class="emoji l l-2">🚨</div>
                 <div class="emoji l l-3">🚨</div>
@@ -97,9 +103,9 @@
                 <div class="emoji m m-6">🚨</div>
             </div>
         </div>
-        <div id="siren" class="tab-pane fade hide">
-            <div class="animate siren">
-
+        <div id="seed" class="tab-pane fade hide">
+            <div class="animate">
+                <div class="m-1">🌱</div>
             </div>
         </div>
     </div>
