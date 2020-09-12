@@ -1,12 +1,13 @@
 # FlyinEmoji
-CSS attempt to make Emoji fly
-View <a href="https://asdalavisa.github.io/FlyinEmoji/"> Here</a>
+![](https://adamxweb.github.io/FlyinEmoji/flyinemojiscreenshot.png)
+CSS attempt to make Emoji fly\
+View live<a href="https://adamxweb.github.io/FlyinEmoji/"> Here</a>
 
 ## Purpose
 To learn a bit of CSS and how elements can be animated changed with basic javascript.
 
 ## End goal.
-For Emojis to go from left to right in grid patterns of different sizes on loop.
+For Emojis to go from left to right in grid patterns of different sizes on loop.\
 Interactive buttons below of the siren will change the background to a red, and the emojis to the siren with meteors coming crashing down and explosions on collision.
 
 ## Realistic achievement?
