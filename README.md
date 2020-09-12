@@ -1,10 +1,10 @@
 # FlyinEmoji
 ![](https://adamxweb.github.io/FlyinEmoji/flyinemojiscreenshot.png)
-CSS attempt to make Emoji fly\
+Attempt to learn CSS animations, without using any javascript, and to make Emoji fly\
 View live<a href="https://adamxweb.github.io/FlyinEmoji/"> Here</a>
 
 ## Purpose
-To learn a bit of CSS and how elements can be animated changed with basic javascript.
+To expand my knowledge around CSS, and to create animations without the reliance of javascript. Note; Javascript is being used to change which animation is being shown without navigating to a separate page. I wanted to set a goal of some form of interactivity and variance in the animations.
 
 ## End goal.
 For Emojis to go from left to right in grid patterns of different sizes on loop.\
